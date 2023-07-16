@@ -24,10 +24,13 @@ function App() {
     createdAt: '18:00',
   }
   ]);
+  const reverseOrder = () =>{
+    setTodos((prevTodods) =>[...prevTodos].reverse());
+  };
 
   return (
     <div id="main">
-      <button>Reverse</button>
+      <button onClick ={reverseOrder}>Reverse</button>
       <table>
         <tbody>
         </tbody>
